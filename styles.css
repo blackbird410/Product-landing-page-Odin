@@ -70,8 +70,8 @@ body {
 
 img {
     flex: 1 1 auto;
-    max-width: 500px;
-    height: 240px;
+    max-width: 300px;
+    height: auto;
     border-radius: 16px;
 }
 
@@ -88,7 +88,7 @@ img {
 
 .d-button {
     flex: 0 1 auto;
-    max-width: 64px;
+    max-width: 84px;
     padding: 12px 24px;
     background-color: #3882F6;
     border-radius: 16px;
@@ -127,9 +127,12 @@ img {
 
 .card-box {
     border: solid;
-    height: 120px;
-    border-radius: 16px;
+    height: 180px;
+    border-radius: 20px;
     border-color: #3882F6;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .card-text {
@@ -240,6 +243,17 @@ a {
     border-radius: 16px;
 }
 
+.left img {
+    width: 82px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.card-box img {
+    width: 100%;
+    height: auto;
+}
+
 @media only screen and (max-width: 600px) {
     .header {
         padding-bottom: 16px;
@@ -296,8 +310,9 @@ a {
     }
 
     .a-right {
-        padding: 6px 12px;
-        font-size: 12px;
+        padding: 6px 8px;
+        font-size: 11px;
+        text-align: center;
     }
 
     .a-header {
@@ -305,7 +320,7 @@ a {
     }
 
     .card-container {
-        gap: 12px;
+        flex-wrap: wrap;
     }
 
 }
